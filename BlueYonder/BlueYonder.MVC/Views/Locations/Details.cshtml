@@ -1,0 +1,64 @@
+﻿@model BlueYonder.Model.Locations
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Locations</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LocationId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LocationId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Country)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.State)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.State)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CountryCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CountryCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ThumbnailImageFile)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ThumbnailImageFile)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TimeZoneId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TimeZoneId)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
